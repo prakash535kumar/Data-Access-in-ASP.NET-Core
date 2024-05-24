@@ -100,7 +100,7 @@
               "RelativeDocumentMoniker": "Controllers\\InvoicesController.cs",
               "ToolTip": "C:\\Users\\prakashko\\OneDrive - ExamRoomAI\\Documents\\GitHub\\Data-Access-in-ASP.NET-Core\\BasicEfCoreDemo\\Controllers\\InvoicesController.cs",
               "RelativeToolTip": "Controllers\\InvoicesController.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAIwDEAAABNAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-24T20:02:01.071Z",
               "EditorCaption": ""
@@ -108,15 +108,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BasicEfCoreDemo",
+              "Title": "BasicEfCoreDemo.csproj",
               "DocumentMoniker": "C:\\Users\\prakashko\\OneDrive - ExamRoomAI\\Documents\\GitHub\\Data-Access-in-ASP.NET-Core\\BasicEfCoreDemo\\BasicEfCoreDemo.csproj",
               "RelativeDocumentMoniker": "BasicEfCoreDemo.csproj",
               "ToolTip": "C:\\Users\\prakashko\\OneDrive - ExamRoomAI\\Documents\\GitHub\\Data-Access-in-ASP.NET-Core\\BasicEfCoreDemo\\BasicEfCoreDemo.csproj",
               "RelativeToolTip": "BasicEfCoreDemo.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-24T19:58:45.641Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T19:58:45.641Z"
             },
             {
               "$type": "Document",
@@ -128,8 +127,7 @@
               "RelativeToolTip": "Data\\InvoiceDbContext.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAxwB4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T19:53:42.667Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T19:53:42.667Z"
             },
             {
               "$type": "Document",
@@ -141,8 +139,7 @@
               "RelativeToolTip": "Models\\Invoice.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T19:50:21.288Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T19:50:21.288Z"
             },
             {
               "$type": "Document",
@@ -166,8 +163,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-24T18:44:57.442Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T18:44:57.442Z"
             }
           ]
         }
