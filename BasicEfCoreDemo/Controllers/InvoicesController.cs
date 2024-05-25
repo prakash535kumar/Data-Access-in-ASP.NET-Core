@@ -17,15 +17,31 @@ namespace BasicEfCoreDemo.Controllers
             _context = context;
         }
 
-        // GET: api/Invoices
+        //// GET: api/Invoices
+        //[HttpGet]
+        //public async Task<ActionResult<IEnumerable<Invoice>>> GetInvoices()
+        //{
+        //    if (_context.Invoices == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    return await _context.Invoices.ToListAsync();
+        //}
+
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Invoice>>> GetInvoices()
+        public async Task<ActionResult<IEnumerable<Invoice>>> GetInvoices(int page = 1, int pageSize = 10, InvoiceStatus? status = null)
         {
             if (_context.Invoices == null)
             {
                 return NotFound();
             }
-            return await _context.Invoices.ToListAsync();
+
+            return await _context.Invoices.AsQueryable().Where(x => status ==
+                                                        null || x.Status == status)
+                                                        .OrderByDescending(x => x.InvoiceDate)
+                                                        .Skip((page - 1) * pageSize)
+                                                        .Take(pageSize)
+                                                        .ToListAsync();
         }
 
         // GET: api/Invoices/5
@@ -44,6 +60,59 @@ namespace BasicEfCoreDemo.Controllers
             return invoice;
         }
 
+        //// PUT: api/Invoices/5
+        //// To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        //[HttpPut("{id}")]
+        //public async Task<IActionResult> PutInvoice(Guid id, Invoice invoice)
+        //{
+        //    if (id != invoice.Id)
+        //    {
+        //        return BadRequest();
+        //    }
+        //    _context.Entry(invoice).State = EntityState.Modified;
+        //    try
+        //    {
+        //        await _context.SaveChangesAsync();
+        //    }
+        //    catch (DbUpdateConcurrencyException)
+        //    {
+        //        if (!InvoiceExists(id))
+        //        {
+        //            return NotFound();
+        //        }
+        //        else
+        //        {
+        //            throw;
+        //        }
+        //    }
+        //    return NoContent();
+        //}
+
+        //// PUT: api/Invoices/5
+        //// To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        //[HttpPut("{id}")]
+        //public async Task<IActionResult> PutInvoice(Guid id, Invoice invoice)
+        //{
+        //    if (id != invoice.Id)
+        //    {
+        //        return BadRequest();
+        //    }
+        //    var invoiceToUpdate = await _context.Invoices.FindAsync(id);
+        //    if (invoiceToUpdate == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    invoiceToUpdate.InvoiceNumber = invoice.InvoiceNumber;
+        //    invoiceToUpdate.ContactName = invoice.ContactName;
+        //    invoiceToUpdate.Description = invoice.Description;
+        //    invoiceToUpdate.Amount = invoice.Amount;
+        //    invoiceToUpdate.InvoiceDate = invoice.InvoiceDate;
+        //    invoiceToUpdate.DueDate = invoice.DueDate;
+        //    invoiceToUpdate.Status = invoice.Status;
+        //    await _context.SaveChangesAsync();
+        //    return Ok(invoiceToUpdate);
+        //}
+
         // PUT: api/Invoices/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
@@ -53,23 +122,16 @@ namespace BasicEfCoreDemo.Controllers
             {
                 return BadRequest();
             }
-            _context.Entry(invoice).State = EntityState.Modified;
-            try
+            var invoiceToUpdate = await _context.Invoices.FindAsync(id);
+            if (invoiceToUpdate == null)
             {
-                await _context.SaveChangesAsync();
+                return NotFound();
             }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!InvoiceExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-            return NoContent();
+            // Update only the properties that have changed 
+            _context.Entry(invoiceToUpdate).CurrentValues.SetValues(invoice);
+            await _context.SaveChangesAsync();
+
+            return Ok(invoiceToUpdate);
         }
 
         // POST: api/Invoices
@@ -81,8 +143,10 @@ namespace BasicEfCoreDemo.Controllers
             {
                 return Problem("Entity set 'InvoiceDbContext.Invoices' is null.");
             }
-            _context.Invoices.Add(invoice);
+            // _context.Invoices.Add(invoice); This is equivalent to the following code
+            _context.Entry(invoice).State = EntityState.Added;
             await _context.SaveChangesAsync();
+
             return CreatedAtAction("GetInvoice", new
             {
                 id = invoice.Id

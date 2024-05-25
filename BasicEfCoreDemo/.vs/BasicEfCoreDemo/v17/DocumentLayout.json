@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{FA9ABB7B-3D6B-4F3C-9773-6D416D274281}|BasicEfCoreDemo.csproj|solutionrelative:controllers\\invoicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA9ABB7B-3D6B-4F3C-9773-6D416D274281}|BasicEfCoreDemo.csproj|c:\\users\\prakashko\\onedrive - examroomai\\documents\\github\\data-access-in-asp.net-core\\basicefcoredemo\\basicefcoredemo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{FA9ABB7B-3D6B-4F3C-9773-6D416D274281}|BasicEfCoreDemo.csproj|solutionrelative:basicefcoredemo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{FA9ABB7B-3D6B-4F3C-9773-6D416D274281}|BasicEfCoreDemo.csproj|c:\\users\\prakashko\\onedrive - examroomai\\documents\\github\\data-access-in-asp.net-core\\basicefcoredemo\\models\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA9ABB7B-3D6B-4F3C-9773-6D416D274281}|BasicEfCoreDemo.csproj|solutionrelative:models\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FA9ABB7B-3D6B-4F3C-9773-6D416D274281}|BasicEfCoreDemo.csproj|c:\\users\\prakashko\\onedrive - examroomai\\documents\\github\\data-access-in-asp.net-core\\basicefcoredemo\\data\\invoicedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FA9ABB7B-3D6B-4F3C-9773-6D416D274281}|BasicEfCoreDemo.csproj|solutionrelative:data\\invoicedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA9ABB7B-3D6B-4F3C-9773-6D416D274281}|BasicEfCoreDemo.csproj|c:\\users\\prakashko\\onedrive - examroomai\\documents\\github\\data-access-in-asp.net-core\\basicefcoredemo\\models\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA9ABB7B-3D6B-4F3C-9773-6D416D274281}|BasicEfCoreDemo.csproj|solutionrelative:models\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FA9ABB7B-3D6B-4F3C-9773-6D416D274281}|BasicEfCoreDemo.csproj|c:\\users\\prakashko\\onedrive - examroomai\\documents\\github\\data-access-in-asp.net-core\\basicefcoredemo\\basicefcoredemo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FA9ABB7B-3D6B-4F3C-9773-6D416D274281}|BasicEfCoreDemo.csproj|solutionrelative:basicefcoredemo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FA9ABB7B-3D6B-4F3C-9773-6D416D274281}|BasicEfCoreDemo.csproj|c:\\users\\prakashko\\onedrive - examroomai\\documents\\github\\data-access-in-asp.net-core\\basicefcoredemo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -100,23 +100,22 @@
               "RelativeDocumentMoniker": "Controllers\\InvoicesController.cs",
               "ToolTip": "C:\\Users\\prakashko\\OneDrive - ExamRoomAI\\Documents\\GitHub\\Data-Access-in-ASP.NET-Core\\BasicEfCoreDemo\\Controllers\\InvoicesController.cs",
               "RelativeToolTip": "Controllers\\InvoicesController.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAIwDEAAABNAAAA",
+              "ViewState": "AQIAAIgAAAAAAAAAAAAcwJwAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-24T20:02:01.071Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BasicEfCoreDemo",
+              "DocumentIndex": 3,
+              "Title": "BasicEfCoreDemo.csproj",
               "DocumentMoniker": "C:\\Users\\prakashko\\OneDrive - ExamRoomAI\\Documents\\GitHub\\Data-Access-in-ASP.NET-Core\\BasicEfCoreDemo\\BasicEfCoreDemo.csproj",
               "RelativeDocumentMoniker": "BasicEfCoreDemo.csproj",
               "ToolTip": "C:\\Users\\prakashko\\OneDrive - ExamRoomAI\\Documents\\GitHub\\Data-Access-in-ASP.NET-Core\\BasicEfCoreDemo\\BasicEfCoreDemo.csproj",
               "RelativeToolTip": "BasicEfCoreDemo.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-24T19:58:45.641Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T19:58:45.641Z"
             },
             {
               "$type": "Document",
@@ -126,20 +125,20 @@
               "RelativeDocumentMoniker": "Data\\InvoiceDbContext.cs",
               "ToolTip": "C:\\Users\\prakashko\\OneDrive - ExamRoomAI\\Documents\\GitHub\\Data-Access-in-ASP.NET-Core\\BasicEfCoreDemo\\Data\\InvoiceDbContext.cs",
               "RelativeToolTip": "Data\\InvoiceDbContext.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwB4AAAAAAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-24T19:53:42.667Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Invoice.cs",
               "DocumentMoniker": "C:\\Users\\prakashko\\OneDrive - ExamRoomAI\\Documents\\GitHub\\Data-Access-in-ASP.NET-Core\\BasicEfCoreDemo\\Models\\Invoice.cs",
               "RelativeDocumentMoniker": "Models\\Invoice.cs",
               "ToolTip": "C:\\Users\\prakashko\\OneDrive - ExamRoomAI\\Documents\\GitHub\\Data-Access-in-ASP.NET-Core\\BasicEfCoreDemo\\Models\\Invoice.cs",
               "RelativeToolTip": "Models\\Invoice.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAASAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-24T19:50:21.288Z",
               "EditorCaption": ""
@@ -166,8 +165,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-24T18:44:57.442Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T18:44:57.442Z"
             }
           ]
         }
