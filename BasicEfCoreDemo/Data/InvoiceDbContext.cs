@@ -24,7 +24,6 @@ namespace BasicEfCoreDemo.Data
            TimeSpan.Zero),
                 Status = InvoiceStatus.AwaitPayment
             });
-            // Omitted for brevity. You can check the full code in the sample project.
         }
     }
 }
