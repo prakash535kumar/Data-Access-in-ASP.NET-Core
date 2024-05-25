@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BasicEfCoreDemo.Migrations
 {
-    [DbContext(typeof(InvoiceDbContext))]
+    [DbContext(typeof(SampleDbContext))]
     [Migration("20240524195630_AddSeedData")]
     partial class AddSeedData
     {

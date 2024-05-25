@@ -10,9 +10,9 @@ namespace BasicEfCoreDemo.Controllers
     [ApiController]
     public class InvoicesController : ControllerBase
     {
-        private readonly InvoiceDbContext _context;
+        private readonly SampleDbContext _context;
 
-        public InvoicesController(InvoiceDbContext context)
+        public InvoicesController(SampleDbContext context)
         {
             _context = context;
         }
@@ -141,16 +141,13 @@ namespace BasicEfCoreDemo.Controllers
         {
             if (_context.Invoices == null)
             {
-                return Problem("Entity set 'InvoiceDbContext.Invoices' is null.");
+                return Problem("Entity set 'InvoiceDbContext.Invoices'  is null.");
             }
-            // _context.Invoices.Add(invoice); This is equivalent to the following code
-            _context.Entry(invoice).State = EntityState.Added;
+
+            _context.Invoices.Add(invoice);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetInvoice", new
-            {
-                id = invoice.Id
-            }, invoice);
+            return CreatedAtAction("GetInvoice", new { id = invoice.Id }, invoice);
         }
 
         // DELETE: api/Invoices/5
