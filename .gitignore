@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/BasicEfCoreDemo/.vs/BasicEfCoreDemo/FileContentIndex/228f937e-94a0-468e-a96e-b24af9377871.vsidx
+/BasicEfCoreDemo/.vs/BasicEfCoreDemo/FileContentIndex/c94e43aa-393e-4b62-9e2c-a3f853a9493a.vsidx
+/BasicEfCoreDemo/.vs/BasicEfCoreDemo/v17/.suo
+/BasicEfCoreDemo/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+/BasicEfCoreDemo/obj/Debug/net8.0/BasicEfCoreDemo.AssemblyInfo.cs
+/BasicEfCoreDemo/obj/Debug/net8.0/BasicEfCoreDemo.AssemblyInfoInputs.cache
+/BasicEfCoreDemo/obj/Debug/net8.0/BasicEfCoreDemo.assets.cache
+/BasicEfCoreDemo/obj/Debug/net8.0/BasicEfCoreDemo.csproj.AssemblyReference.cache
+/BasicEfCoreDemo/obj/Debug/net8.0/BasicEfCoreDemo.GeneratedMSBuildEditorConfig.editorconfig
+/BasicEfCoreDemo/obj/Debug/net8.0/BasicEfCoreDemo.GlobalUsings.g.cs
