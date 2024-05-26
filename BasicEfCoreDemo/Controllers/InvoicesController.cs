@@ -1,6 +1,7 @@
 ﻿using BasicEfCoreDemo.Data;
 using BasicEfCoreDemo.Models;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -36,12 +37,48 @@ namespace BasicEfCoreDemo.Controllers
                 return NotFound();
             }
 
-            return await _context.Invoices.AsQueryable().Where(x => status ==
-                                                        null || x.Status == status)
-                                                        .OrderByDescending(x => x.InvoiceDate)
-                                                        .Skip((page - 1) * pageSize)
-                                                        .Take(pageSize)
-                                                        .ToListAsync();
+            //return await _context.Invoices.AsQueryable().Where(x => status ==
+            //                                            null || x.Status == status)
+            //                                            .OrderByDescending(x => x.InvoiceDate)
+            //                                            .Skip((page - 1) * pageSize)
+            //                                            .Take(pageSize)
+            //                                            .ToListAsync();
+
+
+            /*
+             * Important note
+             * The Include() method is a convenient way to include dependent entities. 
+             * However, it may cause performance issues when the collection of dependent entities is large. 
+             * For example, a post may have hundreds or thousands of comments. 
+             * It is not a good idea to include all comments in the query result for a list page. 
+             * In this case, it is not necessary to include dependent entities in the query.
+             */
+            //return await _context.Invoices
+            //                    //  By default, EF Core does not include dependent entities in the query result, so you need to explicitly include these in the query result
+            //                    .Include(x => x.InvoiceItems)
+            //                    .Where(x => status == null || x.Status == status)
+            //                    .OrderByDescending(x => x.InvoiceDate)
+            //                    .Skip((page - 1) * pageSize)
+            //                    .Take(pageSize)
+            //                    .ToListAsync();
+
+            /* 
+             * Note that :
+             * the query includes Invoice data in each row of the result. For some scenarios, 
+             * it may cause a so-called Cartesian explosion problem, which means the amount of duplicated data in the result is too large and may cause performance issues. 
+             * In this case, we can split the queries into two steps. 
+             * First, we query the invoices, and then we query the invoice items. 
+             * You need to use the AsSplitQuery() method
+             */
+            return await _context.Invoices
+                                //  By default, EF Core does not include dependent entities in the query result, so you need to explicitly include these in the query result
+                                .Include(x => x.InvoiceItems)
+                                .Where(x => status == null || x.Status == status)
+                                .OrderByDescending(x => x.InvoiceDate)
+                                .Skip((page - 1) * pageSize)
+                                .Take(pageSize)
+                                .AsSplitQuery()
+                                .ToListAsync();
         }
 
         // GET: api/Invoices/5
@@ -52,7 +89,11 @@ namespace BasicEfCoreDemo.Controllers
             {
                 return NotFound();
             }
-            var invoice = await _context.Invoices.FindAsync(id);
+            //var invoice = await _context.Invoices.FindAsync(id);
+
+            var invoice = await _context.Invoices
+                .Include(x => x.InvoiceItems)
+                .SingleOrDefaultAsync(x => x.Id == id);
             if (invoice == null)
             {
                 return NotFound();
