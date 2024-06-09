@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace EfCoreRelationshipsDemo.Data;
+namespace BasicEfCoreDemo.Data;
 
 public class InvoiceConfiguration : IEntityTypeConfiguration<Invoice>
 {

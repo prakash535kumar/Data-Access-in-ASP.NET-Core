@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\prakashko\\OneDrive - ExamRoomAI\\Documents\\GitHub\\Data-Access-in-ASP.NET-Core\\BasicEfCoreDemo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FA9ABB7B-3D6B-4F3C-9773-6D416D274281}|BasicEfCoreDemo.csproj|c:\\users\\prakashko\\onedrive - examroomai\\documents\\github\\data-access-in-asp.net-core\\basicefcoredemo\\controllers\\invoicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA9ABB7B-3D6B-4F3C-9773-6D416D274281}|BasicEfCoreDemo.csproj|solutionrelative:controllers\\invoicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FA9ABB7B-3D6B-4F3C-9773-6D416D274281}|BasicEfCoreDemo.csproj|c:\\users\\prakashko\\onedrive - examroomai\\documents\\github\\data-access-in-asp.net-core\\basicefcoredemo\\data\\sampledbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA9ABB7B-3D6B-4F3C-9773-6D416D274281}|BasicEfCoreDemo.csproj|solutionrelative:data\\sampledbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA9ABB7B-3D6B-4F3C-9773-6D416D274281}|BasicEfCoreDemo.csproj|c:\\users\\prakashko\\onedrive - examroomai\\documents\\github\\data-access-in-asp.net-core\\basicefcoredemo\\models\\invoiceitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA9ABB7B-3D6B-4F3C-9773-6D416D274281}|BasicEfCoreDemo.csproj|solutionrelative:models\\invoiceitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FA9ABB7B-3D6B-4F3C-9773-6D416D274281}|BasicEfCoreDemo.csproj|c:\\users\\prakashko\\onedrive - examroomai\\documents\\github\\data-access-in-asp.net-core\\basicefcoredemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA9ABB7B-3D6B-4F3C-9773-6D416D274281}|BasicEfCoreDemo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,27 +78,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "InvoiceItem.cs",
-              "DocumentMoniker": "C:\\Users\\prakashko\\OneDrive - ExamRoomAI\\Documents\\GitHub\\Data-Access-in-ASP.NET-Core\\BasicEfCoreDemo\\Models\\InvoiceItem.cs",
-              "RelativeDocumentMoniker": "Models\\InvoiceItem.cs",
-              "ToolTip": "C:\\Users\\prakashko\\OneDrive - ExamRoomAI\\Documents\\GitHub\\Data-Access-in-ASP.NET-Core\\BasicEfCoreDemo\\Models\\InvoiceItem.cs",
-              "RelativeToolTip": "Models\\InvoiceItem.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAWAAAA",
+              "DocumentIndex": 0,
+              "Title": "SampleDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\prakashko\\OneDrive - ExamRoomAI\\Documents\\GitHub\\Data-Access-in-ASP.NET-Core\\BasicEfCoreDemo\\Data\\SampleDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\SampleDbContext.cs",
+              "ToolTip": "C:\\Users\\prakashko\\OneDrive - ExamRoomAI\\Documents\\GitHub\\Data-Access-in-ASP.NET-Core\\BasicEfCoreDemo\\Data\\SampleDbContext.cs",
+              "RelativeToolTip": "Data\\SampleDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T20:17:20.682Z"
+              "WhenOpened": "2024-06-09T17:41:26.744Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "InvoicesController.cs",
-              "DocumentMoniker": "C:\\Users\\prakashko\\OneDrive - ExamRoomAI\\Documents\\GitHub\\Data-Access-in-ASP.NET-Core\\BasicEfCoreDemo\\Controllers\\InvoicesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\InvoicesController.cs",
-              "ToolTip": "C:\\Users\\prakashko\\OneDrive - ExamRoomAI\\Documents\\GitHub\\Data-Access-in-ASP.NET-Core\\BasicEfCoreDemo\\Controllers\\InvoicesController.cs",
-              "RelativeToolTip": "Controllers\\InvoicesController.cs",
-              "ViewState": "AQIAAEQAAAAAAAAAAAAAwFEAAAAJAAAA",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\prakashko\\OneDrive - ExamRoomAI\\Documents\\GitHub\\Data-Access-in-ASP.NET-Core\\BasicEfCoreDemo\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\prakashko\\OneDrive - ExamRoomAI\\Documents\\GitHub\\Data-Access-in-ASP.NET-Core\\BasicEfCoreDemo\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T15:09:05.422Z",
+              "WhenOpened": "2024-06-09T17:34:50.277Z",
               "EditorCaption": ""
             }
           ]
