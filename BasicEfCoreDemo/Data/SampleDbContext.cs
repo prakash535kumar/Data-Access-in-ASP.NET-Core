@@ -1,30 +1,40 @@
 ﻿using BasicEfCoreDemo.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Hosting;
+using System.Net;
 
 namespace BasicEfCoreDemo.Data
 {
-    public class SampleDbContext(DbContextOptions<SampleDbContext> options) : DbContext(options)
+    public class SampleDbContext(DbContextOptions<SampleDbContext> options, IConfiguration configuration)
+    : DbContext(options)
     {
-        //public DbSet<Invoice> Invoices { get; set; }
         public DbSet<Invoice> Invoices => Set<Invoice>();
         public DbSet<InvoiceItem> InvoiceItems => Set<InvoiceItem>();
 
-        //protected override void OnModelCreating(ModelBuilder modelBuilder)
-        //{
-        //    modelBuilder.Entity<Invoice>().HasData(
-        //    new Invoice
-        //    {
-        //        Id = Guid.NewGuid(),
-        //        InvoiceNumber = "INV-001",
-        //        ContactName = "Iron Man",
-        //        Description = "Invoice for the first month",
-        //        Amount = 100,
-        //        InvoiceDate = new DateTimeOffset(2023, 1, 1, 0, 0, 0,
-        //   TimeSpan.Zero),
-        //        DueDate = new DateTimeOffset(2023, 1, 15, 0, 0, 0,
-        //   TimeSpan.Zero),
-        //        Status = InvoiceStatus.AwaitPayment
-        //    });
-        //}
+        //// One-to-Many
+        //public DbSet<Category> Categories => Set<Category>();
+        //public DbSet<Post> Posts => Set<Post>();
+
+        //// One-to-One
+        //public DbSet<Contact> Contacts => Set<Contact>();
+        //public DbSet<Address> Addresses => Set<Address>();
+
+        // Many-to-Many
+        public DbSet<Movie> Movies => Set<Movie>();
+        public DbSet<Actor> Actors => Set<Actor>();
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            //modelBuilder.SeedInvoiceData();
+
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(SampleDbContext).Assembly);
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            base.OnConfiguring(optionsBuilder);
+            optionsBuilder.UseSqlServer(configuration.GetConnectionString("DefaultConnection"),
+                b => b.UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery));
+        }
     }
 }
